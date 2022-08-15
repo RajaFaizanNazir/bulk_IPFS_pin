@@ -1,3 +1,5 @@
 # bulk_IPFS_pin
  
- '''python3 main.py'''
+ '''sh
+ python3 main.py
+ '''
