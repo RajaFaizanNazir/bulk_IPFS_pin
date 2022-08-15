@@ -1,2 +1,4 @@
+--upgrade pip
 pybase64
+requests
 json
