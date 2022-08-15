@@ -3,6 +3,10 @@ import json
 import os
 import requests
 
+if not os.path.exists("images"):
+    print("images folder does not exits, please make a folder 'images' and paste all images in that folder")
+    exit()
+
 url = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder"
 finalArray = []
 print("Processing")
