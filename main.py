@@ -40,8 +40,12 @@ def add_path_in_json(base_url):
     file_list = os.listdir("data/images")
     for i in file_list:
         json_path = parentFolder + "/jsons/" + str(i.split(".")[0]) + ".json"
-        json_file = open(json_path, "r")
-        temp_json = json.loads(json_file.read())
+        temp_json = {}
+        try:
+            json_file = open(json_path, "r")
+            temp_json = json.loads(json_file.read())
+        except Exception as exc:
+            print(exc)
         temp_json["image"] = base_url + "/" + i
         json_file = open(json_path, "w")
         json_file.write(json.dumps(temp_json))
