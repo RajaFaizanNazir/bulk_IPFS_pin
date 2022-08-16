@@ -17,6 +17,8 @@ def upload(folder):
     final_array = []
     print("Preparing to upload")
     file_list = os.listdir(parentFolder + "/" + folder)
+    if len(file_list) == 0:
+        return
     for i in file_list:
         with open(parentFolder + "/" + folder + "/" + str(i), "rb") as file:
             b64 = base64.b64encode(file.read())
