@@ -12,13 +12,14 @@ parentFolder = "data"
 def upload(folder):
     if not os.path.exists(parentFolder + "/" + folder):
         print("images folder does not exits, please make a folder 'images' and paste all images in that folder")
-        exit()
+        print("creating file structure for you, paste files in the directories")
+        os.system("mkdir " + parentFolder + "/" + folder)
     final_array = []
-    print("Processing")
-    images_list = os.listdir(parentFolder + "/" + folder)
-    for i in images_list:
-        with open(parentFolder + "/" + folder + "/" + str(i), "rb") as image_file:
-            b64 = base64.b64encode(image_file.read())
+    print("Preparing to upload")
+    file_list = os.listdir(parentFolder + "/" + folder)
+    for i in file_list:
+        with open(parentFolder + "/" + folder + "/" + str(i), "rb") as file:
+            b64 = base64.b64encode(file.read())
             body = {"path": "NFT/" + str(i), "content": str(b64, "utf-8")}
             final_array.append(body)
 
@@ -26,15 +27,27 @@ def upload(folder):
               "Content-Type": "application/json; charset=utf-8", "Host": "deep-index.moralis.io",
               "Content-Length": str(len(json.dumps(body)))}
 
-    print("Uploading: " + str(len(images_list)) + " " + folder)
+    print("Uploading: " + str(len(file_list)) + " " + folder)
     response_data = requests.post(url=url, headers=header, data=json.dumps(final_array))
     print("Uploaded")
     base_url = "/".join(response_data.json()[0]["path"].split("/")[:-1])
     print("BASE URL of " + folder + ": " + base_url, end="\n*******************************\n")
     return base_url
 
-def add_path_in_json():
-    pass
 
-upload("images")
+def add_path_in_json(base_url):
+    print("Preparing meta data")
+    file_list = os.listdir("data/images")
+    for i in file_list:
+        json_path = parentFolder + "/jsons/" + str(i.split(".")[0]) + ".json"
+        json_file = open(json_path, "r")
+        temp_json = json.loads(json_file.read())
+        temp_json["image"] = base_url + "/" + i
+        json_file = open(json_path, "w")
+        json_file.write(json.dumps(temp_json))
+        json_file.close()
+    print("Meta data prepared")
+
+
+add_path_in_json(upload("images"))
 upload("jsons")
