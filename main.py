@@ -8,6 +8,7 @@ if not os.path.exists("images"):
     exit()
 
 url = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder"
+apiKey = "hfIwtLH5S62AGzhPrUMWn6tVddAohLT0nIsCMkdilQYd6DROJfL6k0sdYSFxn3z3"
 finalArray = []
 print("Processing")
 for i in os.listdir("images"):
@@ -16,7 +17,7 @@ for i in os.listdir("images"):
         body = {"path": "NFT/" + str(i), "content": str(b64, "utf-8")}
         finalArray.append(body)
 
-header = {"X-API-Key": "hfIwtLH5S62AGzhPrUMWn6tVddAohLT0nIsCMkdilQYd6DROJfL6k0sdYSFxn3z3",
+header = {"X-API-Key": apiKey,
                   "Content-Type": "application/json; charset=utf-8", "Host": "deep-index.moralis.io",
                   "Content-Length": str(len(json.dumps(body)))}
 print("Uploading: "+ str(len(os.listdir("images")))+ " images")
