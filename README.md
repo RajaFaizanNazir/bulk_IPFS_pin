@@ -1,13 +1,13 @@
 # bulk_IPFS_pin
 
-## Testing on
-> Ubuntu
-> Windows 11
-## Pre Req
-> Python
-> Pip (Package manager of Python)
+### Testing on
+* Ubuntu
+* Windows 11
+### Pre Req
+* Python
+* Pip (Package manager of Python)
 
- just make a folder named 'images' in the same directory and run 'run.bat' file, if python and pip is already installed.
+> Guide to run the progrma
 
 ```sh
 git clone https://github.com/RajaFaizanNazir/bulk_IPFS_pin.git
@@ -32,7 +32,7 @@ paste all images in the 'images' folder
  ```
  or just run run.bat
  
-File Structure
+## File Structure
 ```sh
 .
 ├── main.py
