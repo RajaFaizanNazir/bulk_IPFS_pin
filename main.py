@@ -46,7 +46,7 @@ def add_path_in_json(base_url):
         json_file = open(json_path, "w")
         json_file.write(json.dumps(temp_json))
         json_file.close()
-    print("Meta data prepared")
+    print("Meta data prepared", end="\n*******************************\n")
 
 
 add_path_in_json(upload("images"))
