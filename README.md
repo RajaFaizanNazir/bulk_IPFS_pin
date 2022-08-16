@@ -23,5 +23,18 @@ paste all images in the 'images' folder
  ```sh
  python3 main.py
  ```
+ or just run run.bat
  
-or just run run.bat
+File Structure
+.
+├── main.py
+├── requirement.txt
+├── constants/
+│     └──── env.json
+├── data/
+│     ├──── images/
+│     │        └───── img1.png
+│     │
+│     └──── jsons/
+│              └───── img1.json
+└── README.md
