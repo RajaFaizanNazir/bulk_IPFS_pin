@@ -14,7 +14,7 @@ cd bulk_IPFS_pin
 mkdir images
 ```
 
-paste all images in the images folder
+paste all images in the 'images' folder
  
  ```sh
  pip install -r requirements.txt
