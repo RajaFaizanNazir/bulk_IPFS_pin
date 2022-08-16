@@ -1,5 +1,12 @@
 # bulk_IPFS_pin
  
+ just make a folder named 'images' in the same directory and run 'run.bat' file, if python and pip is already installed.
+ 
+
+```sh
+mkdir images
+```
+ 
  ```sh
  pip install -r requirements.txt
  ```
