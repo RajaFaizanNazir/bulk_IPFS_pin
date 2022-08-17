@@ -8,8 +8,8 @@ def update_env():
     json_read = open("constants/env.json", "r")
     env = json.loads(json_read.read())
     json_read.close()
-    env["X-API-Key"] = key
-    env["parentFolder"] = path
+    env["X-API-Key"] = key.get()
+    env["parentFolder"] = path.get()
     json_write = open("constants/env.json", "w")
     json_write.write(json.dumps(env))
     json_write.close()
