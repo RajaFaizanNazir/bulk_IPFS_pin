@@ -1,14 +1,14 @@
 {
-  "name": "The CockAdoodles #1",
+  "name": "The CockAdoodles #18",
   "description": "6000 angry cocks coming straight at ya",
-  "image": "https://cockadoodle.mypinata.cloud/ipfs/QmQ49NVs2g7YhGCeJ74TR2HRJSmevxFLY9hJGgEKoHZKzR/1.png",
-  "dna": "7da816d1772b7e67d2127bf4ee578a378136dcff",
-  "edition": 1,
-  "date": 1655605000238,
+  "image": "https://cockadoodle.mypinata.cloud/ipfs/QmQ49NVs2g7YhGCeJ74TR2HRJSmevxFLY9hJGgEKoHZKzR/18.png",
+  "dna": "016a187fb00f643e54651d775b495f70abda9fc8",
+  "edition": 18,
+  "date": 1655605082540,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Background 4 (PEACH)"
+      "value": "Background"
     },
     {
       "trait_type": "Base layer",
@@ -24,19 +24,19 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "6 (SQUINT"
+      "value": "2 (STAR TREK"
     },
     {
       "trait_type": "Headwear",
-      "value": "Headwear 7 (TELESCOPE"
+      "value": "Headwear 6 (ORIGINAL"
     },
     {
       "trait_type": "Jumping jacks",
-      "value": "JJ 3 (PEACHWHITE"
+      "value": "JJ 1 (REDWHITE"
     },
     {
       "trait_type": "Squashed NFT",
-      "value": "4 WORLD OF WOMEN"
+      "value": "9 Goblintown"
     }
   ],
   "compiler": "HashLips Art Engine"

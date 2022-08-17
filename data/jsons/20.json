@@ -1,14 +1,14 @@
 {
-  "name": "The CockAdoodles #1",
+  "name": "The CockAdoodles #20",
   "description": "6000 angry cocks coming straight at ya",
-  "image": "https://cockadoodle.mypinata.cloud/ipfs/QmQ49NVs2g7YhGCeJ74TR2HRJSmevxFLY9hJGgEKoHZKzR/1.png",
-  "dna": "7da816d1772b7e67d2127bf4ee578a378136dcff",
-  "edition": 1,
-  "date": 1655605000238,
+  "image": "https://cockadoodle.mypinata.cloud/ipfs/QmQ49NVs2g7YhGCeJ74TR2HRJSmevxFLY9hJGgEKoHZKzR/20.png",
+  "dna": "34dd0b4b76a43804722ec65abbb6c9092ba48ebc",
+  "edition": 20,
+  "date": 1655605091814,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Background 4 (PEACH)"
+      "value": "Background 6 (PURPLE)"
     },
     {
       "trait_type": "Base layer",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Body skins",
-      "value": "SKIN 5 (LIGHTNING RARE "
+      "value": "SKIN 9 (DARK BLUE CAMO"
     },
     {
       "trait_type": "Eyes",
-      "value": "6 (SQUINT"
+      "value": "8 (OG EYES"
     },
     {
       "trait_type": "Headwear",
-      "value": "Headwear 7 (TELESCOPE"
+      "value": "Headwear 6 (ORIGINAL"
     },
     {
       "trait_type": "Jumping jacks",
-      "value": "JJ 3 (PEACHWHITE"
+      "value": "JJ 2 (MINTWHITE"
     },
     {
       "trait_type": "Squashed NFT",
-      "value": "4 WORLD OF WOMEN"
+      "value": "6 BIT BANDIT"
     }
   ],
   "compiler": "HashLips Art Engine"
