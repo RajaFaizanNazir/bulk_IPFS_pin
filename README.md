@@ -6,6 +6,9 @@
 ### Pre Req
 * Python
 * Pip (Package manager of Python)
+>If python is not installed in your Windows machine, click on install_python.bat
+> 
+> Linux's folks already know how to install python ;p
 
 > Guide to run the progrma
 
