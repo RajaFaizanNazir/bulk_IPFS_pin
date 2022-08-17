@@ -1,1 +1,1 @@
-python change_constants_GUI.py.py
+python change_constants_GUI.py
