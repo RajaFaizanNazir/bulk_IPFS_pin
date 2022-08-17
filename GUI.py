@@ -3,9 +3,6 @@ from tkinter import ttk, messagebox
 import tkinter as tk
 import json
 
-path = tk.StringVar()
-key = tk.StringVar()
-
 
 def update_env():
     json_read = open("constants/env.json", "r")
@@ -20,6 +17,8 @@ def update_env():
 
 
 root = Tk()
+path = tk.StringVar()
+key = tk.StringVar()
 frm = ttk.Frame(root, padding=10)
 frm.grid()
 ttk.Label(frm, text="").grid(column=1, row=0)
