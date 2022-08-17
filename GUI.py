@@ -6,7 +6,7 @@ import json
 
 def update_env():
     json_read = open("constants/env.json", "r")
-    env = json_read.read()
+    env = json.loads(json_read.read())
     json_read.close()
     env["X-API-Key"] = key
     env["parentFolder"] = path
