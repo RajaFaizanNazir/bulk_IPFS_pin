@@ -32,9 +32,13 @@ def upload(folder):
 
     print("Uploading: " + str(len(file_list)) + " " + folder)
     response_data = requests.post(url=url, headers=header, data=json.dumps(final_array))
-    print("Uploaded")
-    base_url = "/".join(response_data.json()[0]["path"].split("/")[:-1])
-    print("BASE URL of " + folder + ": " + base_url, end="\n*******************************\n")
+    base_url = ""
+    try:
+        base_url = "/".join(response_data.json()[0]["path"].split("/")[:-1])
+        print("BASE URL of " + folder + ": " + base_url, end="\n*******************************\n")
+        print("Uploaded")
+    except:
+        print(response_data.json())
     return base_url
 
 
