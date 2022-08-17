@@ -11,7 +11,7 @@ def update_env():
     env["X-API-Key"] = key
     env["parentFolder"] = path
     json_write = open("constants/env.json", "w")
-    json_write.write(json.dumps(env))
+    json_write.write(json.loads(env))
     json_write.close()
     messagebox.showinfo("Message", "Constant Written")
 
