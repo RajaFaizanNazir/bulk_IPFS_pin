@@ -39,7 +39,7 @@ def upload(folder):
         print("Uploaded")
     except:
         print(response_data.json())
-        #exit()
+        exit()
     return base_url
 
 
