@@ -4,9 +4,10 @@ import os
 import requests
 
 env = json.loads(open("constants/env.json").read())
+
 url = env["url"]
 apiKey = env["X-API-Key"]
-parentFolder = "data"
+parentFolder = env["parentFolder"]
 
 
 def upload(folder):
