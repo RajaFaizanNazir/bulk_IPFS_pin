@@ -11,6 +11,9 @@ parentFolder = env["parentFolder"]
 
 
 def upload(folder):
+    """
+    This uploads folder items to ipfs moralis
+    """
     if not os.path.exists(parentFolder + "/" + folder):
         print("images folder does not exits, please make a folder 'images' and paste all images in that folder")
         print("creating file structure for you, paste files in the directories")
@@ -44,6 +47,9 @@ def upload(folder):
 
 
 def add_path_in_json(base_url):
+    """
+    This adds path in images meta-data json or create json if it does not eixts
+    """
     print("Preparing meta data")
     file_list = os.listdir("data/images")
     for i in file_list:
