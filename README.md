@@ -10,7 +10,7 @@
 > 
 > Linux's folks already know how to install python ;p
 
-> Guide to run the progrma
+>> Guide to run the progrma
 
 ```sh
 git clone https://github.com/RajaFaizanNazir/bulk_IPFS_pin.git
