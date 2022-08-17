@@ -20,21 +20,8 @@ git clone https://github.com/RajaFaizanNazir/bulk_IPFS_pin.git
 cd bulk_IPFS_pin
 ```
 
-```sh
-mkdir images
-```
+paste all images in the 'images' and 'jsons' folder in the data folder
 
-paste all images in the 'images' folder
- 
- ```sh
- pip install -r requirements.txt
- ```
- 
- ```sh
- python3 main.py
- ```
- or just run run.bat
- 
 ## File Structure
 ```sh
 .
@@ -50,3 +37,14 @@ paste all images in the 'images' folder
 │              └───── img1.json
 └── README.md
 ```
+
+> If you want to give path of another parent folder, replace 'parentFolder' in env.json in constants with an absolute path
+
+ ```sh
+ pip install -r requirements.txt
+ ```
+ 
+ ```sh
+ python3 main.py
+ ```
+ or just run run.bat
