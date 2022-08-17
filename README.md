@@ -55,3 +55,9 @@ Run python script
  python3 main.py
  ```
  or just run.bat
+
+If you want to change the constants from GUI
+ ```sh
+ python3 change_constants_GUI.py
+ ```
+ or just change_constants.bat
